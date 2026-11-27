@@ -1,0 +1,19 @@
+[project]
+name = "coastwatch"
+version = "0.1.0"
+description = "Maritime watch for the Bay of Bengal: fishing activity, dark vessels and AIS gaps in Bangladesh waters"
+readme = "README.md"
+authors = [{ name = "Sarwar Uddin" }]
+requires-python = ">=3.13"
+dependencies = [
+    "folium>=1.0.0",
+    "httpx>=0.29.0",
+    "shapely>=2.2.0",
+]
+
+[project.scripts]
+coastwatch = "coastwatch.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"

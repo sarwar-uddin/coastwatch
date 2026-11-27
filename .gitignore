@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+.venv/
+
+# Secrets
+.env
+
+# Downloaded / generated data (reproducible with `coastwatch` commands)
+data/
+maps/
